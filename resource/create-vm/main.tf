@@ -7,7 +7,7 @@ resource "azurerm_public_ip" "main" {
   name                = "test-public-ip"
   location            = "Denmark East"
   resource_group_name = "Denmark_East"
-  allocation_method   = "static"
+  allocation_method   = "Static"
 }
 
 resource "azurerm_network_interface" "main" {
