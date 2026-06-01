@@ -3,6 +3,13 @@ provider "azurerm" {
     features {}
 }
 
+resource "azurerm_public_ip" "main" {
+  name                = "test-public-ip"
+  location            = "Denmark East"
+  resource_group_name = "Denmark_East"
+  allocation_method   = "Dynamic"
+}
+
 resource "azurerm_network_interface" "main" {
   name                = "test-nic"
   location            = "Denmark East"
