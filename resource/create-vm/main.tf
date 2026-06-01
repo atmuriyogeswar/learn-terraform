@@ -1,7 +1,8 @@
+# Configure the Microsoft Azure Provider
 provider "azurerm" {
     features {}
-  
 }
+
 resource "azurerm_network_interface" "main" {
   name                = "test-nic"
   location            = "Demark East"
