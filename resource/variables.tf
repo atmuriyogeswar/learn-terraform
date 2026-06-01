@@ -1,6 +1,3 @@
-resource "null_resource" "web" {
-  
-}
 
 variable "string" {
   default = "Hello, World!"
